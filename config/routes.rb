@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       # resources :home, only: [:index, :show]
       # Add other routes as needed
       get "/global_access", to: "home#index"
+      post "/send_otp", to: "home#send_otp"
 
     end
   end

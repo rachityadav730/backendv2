@@ -11,6 +11,8 @@ gem 'mysql2', '>= 0.4.4'
 
 gem 'rack-cors'
 
+gem 'twilio-ruby'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
