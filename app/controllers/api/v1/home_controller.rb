@@ -14,8 +14,6 @@ class Api::V1::HomeController < ApplicationController
 
     end
 
-   
-    # +12347424110
     private
 
     def generate_otp
