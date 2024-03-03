@@ -1,4 +1,6 @@
 class Api::V1::HomeController < ApplicationController
+    include DeviseTokenAuth::Concerns::SetUserByToken
+
     def index
         render json: { login: 123 }
     end
@@ -7,7 +9,6 @@ class Api::V1::HomeController < ApplicationController
         p "print mobile number",params
         otp = generate_otp
         # user.update(otp: otp)
-  
         send_otp_via_sms(+917011819905, otp)
         render json: { message: 'OTP sent successfully' }
 
