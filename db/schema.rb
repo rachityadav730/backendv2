@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_03_03_152021) do
+ActiveRecord::Schema.define(version: 2024_03_04_045411) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
@@ -87,6 +87,9 @@ ActiveRecord::Schema.define(version: 2024_03_03_152021) do
     t.boolean "active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "rating"
+    t.string "main_description"
+    t.string "img_url"
     t.index ["category_id"], name: "index_products_on_category_id"
   end
 
